@@ -1,4 +1,5 @@
 <?php
+$apiKey = "YOU API KEY";
 
 // MAKE actual signup actions happen, like saving to ur database
 
@@ -46,7 +47,7 @@ $profileId = $_GET["id"];
 $registrationId = rand();
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://app.clevermessenger.com/api/?api_key=gkaf0cial0pdh4sc4564q6cydslg664m");
+curl_setopt($ch, CURLOPT_URL, "https://app.clevermessenger.com/api/?api_key=$apiKey");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 

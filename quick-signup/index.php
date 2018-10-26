@@ -1,8 +1,9 @@
 <?php
+$apiKey = "YOU API KEY";
 $profileId = $_GET["id"];
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://app.clevermessenger.com/api/match/?api_key=gkaf0cial0pdh4sc4564q6cydslg664m&profile_id=$profileId");
+curl_setopt($ch, CURLOPT_URL, "https://app.clevermessenger.com/api/match/?api_key=$apiKey&profile_id=$profileId");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
