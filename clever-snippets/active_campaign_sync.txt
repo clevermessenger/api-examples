@@ -1,0 +1,32 @@
+{
+   "request": {
+      "url": "http://ACCOUNT.api-us1.com/admin/api.php?api_action=contact_add&api_key=API_KEY  // Replace ",
+      "method": "post",
+      "body_type": "form-data",
+      "form_data": [
+         {
+            "_key": "email",
+            "_value": "EMAIL  // Replace by static or custom field"
+         },
+         {
+            "_key": "first_name",
+            "_value": "{{user_first_name}}"
+         },
+     {
+        "_key": "last_name",
+        "_value": "{{user_last_name}}"
+     },
+
+         {
+            "_key": "p[LIST_ID]",
+            "_value": "LIST_ID // Replace by AC list id"
+         },
+         {
+            "_key": "tags",
+            "_value": "tag1,tag2 // tags separated by commas"
+         }
+
+      ],
+      "headers": []
+   }
+}
