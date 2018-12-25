@@ -1,0 +1,10 @@
+{
+   "request": {
+      "url": "https://hooks.slack.com/services/XXXXXX/XXXXXXX",
+      "method": "post",
+      "body_type": "raw",
+      "raw_data": "{\n    \"text\": \"Subscriber needs attention ! :sos:\",\n    \"attachments\": [\n        {\n            \"title\": \"Clever Messenger Page  - Default Reply\",\n            \"fields\": [\n                {\n                    \"title\": \"Description\",\n                    \"value\": \"{{PROBLEM_DESCRIPTION}}\",\n                    \"short\": false\n                }\n            ],\n            \"author_name\": \"{{user_full_name}}\"\n        }\n    ]\n}",
+      "form_data": [],
+      "headers": []
+   }
+}

@@ -1,0 +1,35 @@
+{
+   "request": {
+      "url": "Mautic URL",
+      "method": "post",
+      "body_type": "form-data",
+      "raw_data": "raw",
+      "form_data": [
+         {
+            "_key": "mauticform[f_name]",
+            "_value": "{{user_full_name}}"
+         },
+         {
+            "_key": "mauticform[email]",
+            "_value": "{{EMAIL}}"
+         },
+         {
+            "_key": "mauticform[tags]",
+            "_value": "[TAGS]"
+         },
+         {
+            "_key": "mauticform[formId]",
+            "_value": "1"
+         },
+         {
+            "_key": "mauticform[return]",
+            "_value": ""
+         },
+         {
+            "_key": "mauticform[formName]",
+            "_value": "test"
+         }
+      ],
+      "headers": []
+   }
+}
